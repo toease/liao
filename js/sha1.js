@@ -94,7 +94,6 @@ function sha1File(settings){
 
                 hash = sha1(block, hash);
                 file.sha1_hash = Crypto.util.bytesToHex(Crypto.util.wordsToBytes(hash));
-				console.log(file.sha1_hash)
             }else{
                 hash = sha1(block, hash);
                 start += buffer;
